@@ -1,6 +1,23 @@
 from time import sleep
 
 def temperatureConversion(fromUnit, toUnit, value):
+
+    """temperatureConversion
+    
+    ### Parameters
+    fromUnit (string): Unit to be converted from (c/f/k).
+    toUnit (string): Unit to be converted to (c/f/k).
+    value (int, float): Value to be converted.
+
+    ### Returns
+    int, float: Conversion result
+
+    ### Example
+    >temperatureConversion('c', 'f', 100)
+
+    >212
+    """
+
     fromUnit = fromUnit.lower()
     toUnit = toUnit.lower()
     
@@ -28,6 +45,7 @@ def temperatureConversion(fromUnit, toUnit, value):
     else:
         return "Invalid"
 
+# Uses example using loop
 def start():
     while True:
         print("===Temperature Conversion===")
